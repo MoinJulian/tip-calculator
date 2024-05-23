@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center > * {
+  margin: 1rem 0;
+  width: 20vw;
+  padding: 0.5rem;
+}
+
+.center > div {
+  margin: 0 !important;
+}
+
+.center > div > h1 {
+  text-align: center;
+}
+
+.center > button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.center > button:hover {
+  background-color: #0056b3;
+}
+
+.center > input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+@media screen and (max-width: 768px) {
+  .center > * {
+    width: 80vw;
+  }
+}
